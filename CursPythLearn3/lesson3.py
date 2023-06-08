@@ -89,12 +89,21 @@ andrei = 20
 ioana = 18
 while andrei >= ioana:
     print("love")
-"""
+
 y = int(input("scrie un numar: "))
 while y <= 5:
     y = int(input("scrie un numar: "))
 print("numarul este mai >5")
 
+
+for men in "sportsmen":
+    print(men)
+"""
+mersedes = int(input("scrie pretul masinii?: "))
+while mersedes < 20000:
+    print("masina sa devalorizat")
+else:
+    print("masina isi mentine pretul")
 
 
 
