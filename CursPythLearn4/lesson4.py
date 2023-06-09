@@ -10,22 +10,26 @@ else:
 print(len("@icloud.com"))
 print(len("@icloud.lu"))
 """
+
+#print(len("@icloud.com"))
 import string
-
-# cod gresit , necesita corectari
-
-icloud = input("user, write your email?: ")
-caracter_special = string.punctuation
-if icloud[-11:] == "@icloud.com" or icloud[-10:] == "@icloud.lu":
-    name_user = icloud[:-11] or icloud[:-10]
-    domen_user = icloud[-11:] or icloud[-10:]
-    print(name_user, domen_user)
-    for char in caracter_special:
-        if char in name_user and char != "!" and char != "?" and char != "$" and char != "_":
+inc = 0
+icloud = input("users need to verified: ")
+cara_special = string.punctuation
+if icloud[-11:] == '@icloud.com':
+    name_email = icloud[:-11]
+    print(name_email)
+    for char in cara_special:
+        if char in name_email and char != "!" and char != "?" and char != "$":
+            print("user has been verified")
+            break
+        else:
+            inc += 1
+        if inc == len(cara_special):
             print("user verified")
-
 else:
-    print("user not verified")
+    print("user not verified!")
+
 
 
 
